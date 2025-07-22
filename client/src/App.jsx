@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="my-div">
-      
       {!IsEducatorRoute && <Navbar />}
       <Routes>
         {/* Student Routes */}

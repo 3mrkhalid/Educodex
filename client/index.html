@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EduCodex</title>
     <link href="src/index.css" rel="stylesheet">
+
+    <script>
+  if (window.location.pathname.includes('//')) {
+    const cleanPath = window.location.pathname.replace(/\/{2,}/g, '/');
+
+    const newUrl = `${window.location.origin}${cleanPath}${window.location.search}${window.location.hash}`;
+    window.location.replace(newUrl);
+  }
+</script>
   </head>
   <body>
     <div id="root"></div>
